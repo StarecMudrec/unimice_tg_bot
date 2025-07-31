@@ -1,6 +1,7 @@
 import telebot
+import os
 
-bot = telebot.TeleBot("YOUR_BOT_TOKEN")
+bot = telebot.TeleBot(os.environ.get('BOT_TOKEN'))
 
 @bot.message_handler(commands=['ping'])
 def ping(message):
