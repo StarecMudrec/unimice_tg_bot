@@ -9,6 +9,6 @@ def ping(message):
 
 @bot.message_handler(commands=['help'])
 def help(message):
-  bot.reply_to(message, "This bot has ping and help commands.")
+  bot.reply_to(message, "This bot has /ping and /help commands.")
 
 bot.polling()
